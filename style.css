@@ -89,12 +89,10 @@ nav ul li a:hover{
 .img_bg{
     width: 600px;
     height: 200px;
-    background-color: #e5e7eb;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #f9faf8;
+    background-image: url(img/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 /* Content */
 .info{
@@ -109,7 +107,7 @@ nav ul li a:hover{
     justify-content: space-evenly;
 }
 .card{
-    width: 150px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,12 +116,22 @@ nav ul li a:hover{
 .card .image{
     width: 100px;
     height: 100px;
-    border: 2px solid #3882f6;
-    border-radius: 5px;
+    border: 2px dashed #3882f6;
+    border-radius: 50%;
     margin-bottom: 5px;
+    background-position: center;
+    background-size: contain;
 }
-.card p{
+.img_1{background-image: url(img/ubuntu.png);}
+.img_2{background-image: url(img/pop_os.png);}
+.img_3{background-image: url(img/fedora.png);}
+.img_4{background-image: url(img/arch.png);}
+.card .about{
     font-weight: 300;
+}
+.card .title{
+    font-weight: 700;
+    font-size: 18px;
 }
 .quote_bg{
     width: 100%;
