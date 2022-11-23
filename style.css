@@ -4,16 +4,33 @@
     box-sizing: border-box;
 }
 body{
-    font-family: Roboto, Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
 }
-.header_bg, .footer_bg{
+button, a{
+    cursor: pointer;
+}
+/* Header and Footer */
+.header_bg, 
+.footer_bg{
     width: 100%;
     background-color: #1f2937;
 }
-header, footer{
-    width: 100%;
+header, 
+footer, 
+.info, 
+.quote, 
+.sign_up_banner{
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f9faf8;
+    font-size: 14px;
+    padding: 2em 0;
 }
 nav{
     display: flex;
@@ -59,6 +76,7 @@ nav ul li a:hover{
     font-size: 18px;
     color: #e5e7eb;
     padding: 1em 0;
+    font-weight: 300;
 }
 .text button{
     background-color: #3882f6;
@@ -77,4 +95,87 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     color: #f9faf8;
+}
+/* Content */
+.info{
+    padding: 2em 0 3em 0;
+}
+.info h2{
+    text-align: center;
+    padding: 1em 0;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.card .image{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #3882f6;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.card p{
+    font-weight: 300;
+}
+.quote_bg{
+    width: 100%;
+    background-color: #e5e7eb;
+}
+.quote{
+    color: #1f2937;
+    padding: 3em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quote_text{
+    font-style: italic;
+    font-weight: 100;
+    font-size: 36px;
+    width: 800px;
+}
+.quote_author{
+    align-self: flex-end;
+    padding: 1em;
+    font-weight: bold;
+    font-size: 20px;
+}
+.sign_up_banner{
+    display: flex;
+    justify-content: center;
+    padding: 7em 0;
+}
+.banner{
+    display: flex;
+    width: 95%;
+    border-radius: 5px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em 5em;
+    background-color: #3882f6;
+    color: #e5e7eb;
+}
+.banner div:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner button{
+    padding: 0.5em 3em;
+    border: 1px solid #f9faf8;
+    color: #f9faf8;
+    background-color: transparent;
+    border-radius: 5px;
+}
+.banner button:hover{
+    color: #3882f6;
+    background-color: #f9faf8;
 }
